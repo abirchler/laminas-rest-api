@@ -1,21 +1,21 @@
-# RestApi module for Zend Framework 3
+# RestApi module for Laminas Framework
 ###(_this is a removed repository from https://github.com/multidots_)
 
 ## Requirements
 This module has the following requirements:
 
-* Zend Framework 3 or greater.
+* Laminas Framework.
 * PHP 7 or greater.
 
 ## Installation
-You can install this module into your Zend Framework application using [composer](http://getcomposer.org).
+You can install this module into your Laminas Framework application using [composer](http://getcomposer.org).
 
 The recommended way to install composer packages is:
 ```
-composer require scorpjio/zf3-rest-api
+composer require abirchler/laminas-rest-api
 ```
 
-Now copy this file "vendor/scorpjio/zf3-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
+Now copy this file "vendor/abirchler/laminas-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
 
 If you do not setup at the time of package installation then add this 'RestApi' to modules.config.php file.
 
@@ -227,4 +227,4 @@ The response of above API call will look like,
 }
 ```
 ## Reporting Issues
-If you have a problem with this module or any bug, please open an issue on [GitHub](https://github.com/scorpjio/zf3-rest-api/issues).
+If you have a problem with this module or any bug, please open an issue on [GitHub](https://github.com/abirchler/laminas-rest-api/issues).

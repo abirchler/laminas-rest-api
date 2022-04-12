@@ -1,33 +1,33 @@
 {
-    "name": "scorpjio/zf3-rest-api",
-    "description": "Zend Framework 3 module to build REST APIs",
+    "name": "abirchler/laminas-rest-api",
+    "description": "Laminas module to build REST APIs",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/scorpjio/zf3-rest-api",
+    "homepage": "https://github.com/laminas/laminas-rest-api",
     "authors": [
         {
-            "name": "scorpj",
+            "name": "abirchler",
             "role": "Author"
         },
         {
             "name": "Community",
-            "homepage": "https://github.com/scorpjio/zf3-rest-api/graphs/contributors"
+            "homepage": "https://github.com/abirchler/laminas-rest-api/graphs/contributors"
         }
     ],
     "support": {
-        "issues": "https://github.com/scorpjio/zf3-rest-api/issues",
-        "source": "https://github.com/scorpjio/zf3-rest-api"
+        "issues": "https://github.com/abirchler/laminas-rest-api/issues",
+        "source": "https://github.com/abirchler/laminas-rest-api"
     },
     "keywords": [
-        "zf3",
-        "zend framework",
+        "lamians",
+        "laminas framework",
         "cors",
         "rest",
         "rest api"
     ],
     "require": {
         "firebase/php-jwt": "^4.0",
-        "zendframework/zend-json": "^3.0"
+        "laminas/laminas-json": "^3.0"
     },
     "autoload": {
         "psr-4": {
@@ -35,7 +35,7 @@
         }
     },
     "extra": {
-        "zf": {
+        "laminas": {
             "module": "RestApi"
         }
     }

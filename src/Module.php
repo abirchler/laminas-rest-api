@@ -2,7 +2,7 @@
 
 namespace RestApi;
 
-use Zend\Mvc\MvcEvent;
+use Laminas\Mvc\MvcEvent;
 
 class Module
 {
@@ -16,7 +16,7 @@ class Module
 
     /**
      * 
-     * @param \Zend\Mvc\MvcEvent $e
+     * @param \Laminas\Mvc\MvcEvent $e
      */
     public function onBootstrap(MvcEvent $e)
     {

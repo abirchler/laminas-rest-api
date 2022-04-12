@@ -2,10 +2,10 @@
 
 namespace RestApi\Controller;
 
-use Zend\Mvc\Controller\AbstractRestfulController;
-use Zend\View\Model\JsonModel;
+use Laminas\Mvc\Controller\AbstractRestfulController;
+use Laminas\View\Model\JsonModel;
 use Firebase\JWT\JWT;
-use Zend\EventManager\EventManagerInterface;
+use Laminas\EventManager\EventManagerInterface;
 
 class ApiController extends AbstractRestfulController
 {
@@ -34,7 +34,7 @@ class ApiController extends AbstractRestfulController
 
     /**
      * set Event Manager to check Authorization
-     * @param \Zend\EventManager\EventManagerInterface $events
+     * @param \Laminas\EventManager\EventManagerInterface $events
      */
     public function setEventManager(EventManagerInterface $events)
     {
@@ -74,7 +74,7 @@ class ApiController extends AbstractRestfulController
             }
         } else {
             $response->setStatusCode(400);
-            $jsonModelArr = ['status' => 'NOK', 'result' => ['error' => 'Require copy this file vender\scorpjio\zf3-rest-api\config\restapi.global.php and paste to root config\autoload\restapi.global.php']];
+            $jsonModelArr = ['status' => 'NOK', 'result' => ['error' => 'Require copy this file vender\abirchler\laminas-rest-api\config\restapi.global.php and paste to root config\autoload\restapi.global.php']];
         }
 
         $response->getHeaders()->addHeaderLine('Content-Type', 'application/json');
@@ -142,7 +142,7 @@ class ApiController extends AbstractRestfulController
 
     /**
      * Create Response for api Assign require data for response and check is valid response or give error
-     * @return \Zend\View\Model\JsonModel 
+     * @return \Laminas\View\Model\JsonModel 
      * 
      */
     public function createResponse()
