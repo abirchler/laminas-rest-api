@@ -3,7 +3,7 @@
     "description": "Laminas module to build REST APIs",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/laminas/laminas-rest-api",
+    "homepage": "https://github.com/abirchler/laminas-rest-api",
     "authors": [
         {
             "name": "abirchler",
