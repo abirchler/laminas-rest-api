@@ -5,6 +5,7 @@ namespace RestApi\Controller;
 use Laminas\Mvc\Controller\AbstractRestfulController;
 use Laminas\View\Model\JsonModel;
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Laminas\EventManager\EventManagerInterface;
 
 class ApiController extends AbstractRestfulController
@@ -133,7 +134,10 @@ class ApiController extends AbstractRestfulController
         $cypherKey = $config['ApiRequest']['jwtAuth']['cypherKey'];
         $tokenAlgorithm = $config['ApiRequest']['jwtAuth']['tokenAlgorithm'];
         try {
-            $decodeToken = JWT::decode($this->token, $cypherKey, [$tokenAlgorithm]);
+					$decodeToken = JWT::decode(
+						$this->token,
+						new Key($cypherKey, $tokenAlgorithm)
+					);
             $this->tokenPayload = $decodeToken;
         } catch (\Exception $e) {
             $this->tokenPayload = $e->getMessage();
