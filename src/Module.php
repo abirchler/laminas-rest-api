@@ -9,7 +9,7 @@ use Laminas\Http\Headers;
 class Module
 {
 
-    const VERSION = '3.0.3-dev';
+    const VERSION = '3.0.5-dev';
 
     public function getConfig()
     {

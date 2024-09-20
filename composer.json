@@ -2,6 +2,7 @@
     "name": "abirchler/laminas-rest-api",
     "description": "Laminas module to build REST APIs",
     "type": "library",
+    "version": "3.0.5",
     "license": "MIT",
     "homepage": "https://github.com/abirchler/laminas-rest-api",
     "authors": [
@@ -26,8 +27,8 @@
         "rest api"
     ],
     "require": {
-        "firebase/php-jwt": "^6.0",
-        "laminas/laminas-json": "^3.0"
+        "firebase/php-jwt": "^6.10",
+        "laminas/laminas-json": "^3.6"
     },
     "autoload": {
         "psr-4": {
